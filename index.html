@@ -3,403 +3,260 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alek Caballero – Coordinador administrativo y de operaciones. Organización, procesos y herramientas digitales." />
-  <title>CV Website</title>
-
-  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-
+  <meta name="description" content="Jimmy Alexander Caballero Moreno - perfil administrativo complementario enfocado en gestión operativa, documentación, seguimiento de procesos y herramientas digitales." />
+  <meta name="theme-color" content="#f7f3eb" />
+  <title>Jimmy Alexander Caballero Moreno | Perfil administrativo</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- ─── NAVEGACIÓN ─────────────────────────────────────────── -->
-  <nav class="nav" role="navigation" aria-label="Navegación principal">
-    <div class="nav__logo">AC</div>
-    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav__links" id="nav-links" role="list">
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#aportes">Aportes</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="#top" aria-label="Ir al inicio">
+        <span class="brand__mark">JC</span>
+        <span class="brand__text">Jimmy Caballero</span>
+      </a>
 
-  <main>
+      <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
 
-    <!-- ─── HERO ───────────────────────────────────────────────── -->
-    <section class="hero" id="inicio" aria-label="Presentación">
-      <div class="hero__grid-bg" aria-hidden="true"></div>
-      <div class="hero__glow" aria-hidden="true"></div>
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#enfoque">Enfoque</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#competencias">Competencias</a></li>
+        <li><a href="#proyectos">Procesos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <div class="hero__content reveal">
-        <p class="hero__eyebrow">Disponible · Remoto</p>
-        <h1 class="hero__name">Jimmy Alexander Caballero Moreno</h1>
-        <p class="hero__title">Coordinador administrativo y de operaciones</p>
-        <p class="hero__subtitle">Gestión administrativa · Operaciones · Procesos · Herramientas digitales</p>
-        <p class="hero__tagline">"Organización, procesos y herramientas digitales<br class="hero__br"> para que las cosas funcionen mejor."</p>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Perfil profesional complementario · Bogotá, Colombia</p>
+          <h1 id="hero-title">Jimmy Alexander Caballero Moreno</h1>
+          <p class="hero__role">Gestión administrativa, operación y seguimiento de procesos</p>
+          <p class="hero__lead">Este sitio reúne una síntesis de mi experiencia administrativa, mi forma de trabajo y algunos procesos que he organizado en entornos educativos, culturales y de servicios.</p>
 
-        <div class="hero__ctas" role="group" aria-label="Acciones de contacto">
-          <a href="Alek_Caballero_CV.pdf" download class="btn btn--primary" aria-label="Descargar CV de Alek Caballero">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Descargar CV
-          </a>
-          <a href="https://wa.me/573195477475?text=Hola%20Alek%2C%20vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20contactarte" target="_blank" rel="noopener" class="btn btn--secondary" aria-label="Contactar a Alek por WhatsApp">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            WhatsApp
-          </a>
-          <a href="mailto:alekcaballeromusic@gmail.com" class="btn btn--ghost" aria-label="Enviar correo a Alek Caballero">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-            Enviar correo
-          </a>
+          <div class="hero__actions" aria-label="Acción principal">
+            <a class="btn btn--primary" href="mailto:alekcaballeromusic@gmail.com">Contactar por correo</a>
+          </div>
         </div>
 
-        <div class="hero__location" aria-label="Ubicación">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Bogotá, Colombia
+        <aside class="profile-card reveal" aria-label="Resumen profesional">
+          <div class="profile-card__header">
+            <span class="profile-card__initials">JC</span>
+            <div>
+              <p class="profile-card__name">Jimmy Caballero</p>
+              <p class="profile-card__meta">Administración · Procesos · Documentación</p>
+            </div>
+          </div>
+
+          <dl class="profile-facts">
+            <div>
+              <dt>Enfoque</dt>
+              <dd>Gestión administrativa y seguimiento operativo</dd>
+            </div>
+            <div>
+              <dt>Experiencia</dt>
+              <dd>Procesos reales en educación, cultura y servicios</dd>
+            </div>
+            <div>
+              <dt>Herramientas</dt>
+              <dd>Google Workspace, Sheets, documentación y sistemas internos</dd>
+            </div>
+            <div>
+              <dt>Correo</dt>
+              <dd><a href="mailto:alekcaballeromusic@gmail.com">alekcaballeromusic@gmail.com</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="perfil" aria-labelledby="perfil-title">
+      <div class="container two-column">
+        <div class="section__intro reveal">
+          <p class="section__kicker">01 · Perfil</p>
+          <h2 id="perfil-title">Un perfil administrativo con criterio, orden y capacidad de ejecución.</h2>
+        </div>
+        <div class="prose reveal">
+          <p>Soy un profesional con experiencia en gestión administrativa, coordinación operativa, seguimiento de tareas, documentación de procesos, comunicación con usuarios y apoyo a equipos de trabajo.</p>
+          <p>Mi trabajo se centra en entender cómo funciona una operación, organizar la información importante, dar seguimiento a los compromisos y proponer mejoras prácticas que faciliten el trabajo diario. Menos discurso bonito, más cosas que sí se pueden revisar, medir y ejecutar, porque el caos en carpetas compartidas ya tuvo demasiado protagonismo.</p>
         </div>
       </div>
     </section>
 
-    <!-- ─── SOBRE MÍ ───────────────────────────────────────────── -->
-    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
+    <section class="section section--muted" id="enfoque" aria-labelledby="enfoque-title">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__label">01 — Perfil</span>
-          <h2 id="sobre-mi-title">Sobre mí</h2>
+          <p class="section__kicker">02 · Enfoque de trabajo</p>
+          <h2 id="enfoque-title">Áreas en las que concentro mi aporte administrativo</h2>
         </div>
-        <div class="about__grid reveal">
-          <div class="about__text">
-            <p>Soy un profesional con experiencia liderando procesos administrativos, académicos y operativos en contextos educativos y culturales. Durante varios años he coordinado equipos, clientes, agendas, documentación, seguimiento de procesos, recursos digitales y soluciones internas orientadas a mejorar la organización y eficiencia de una institución real.</p>
-            <p>Mi perfil combina criterio administrativo con capacidad técnica: puedo llevar un proceso de principio a fin, documentarlo, y construir herramientas sencillas que lo hagan más eficiente. No solo ejecuto tareas; identifico qué mejorar y propongo soluciones prácticas.</p>
-          </div>
-          <div class="about__stats" role="list" aria-label="Datos destacados">
-            <div class="stat-card" role="listitem">
-              <span class="stat-card__num">6+</span>
-              <span class="stat-card__label">Años coordinando procesos y equipos</span>
-            </div>
-            <div class="stat-card" role="listitem">
-              <span class="stat-card__num">100%</span>
-              <span class="stat-card__label">Disponibilidad para trabajo remoto</span>
-            </div>
-            <div class="stat-card" role="listitem">
-              <span class="stat-card__num">↗</span>
-              <span class="stat-card__label">Orientado a resultados y mejora de procesos</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ─── QUÉ PUEDO APORTAR ──────────────────────────────────── -->
-    <section class="section section--alt" id="aportes" aria-labelledby="aportes-title">
-      <div class="container">
-        <div class="section__header reveal">
-          <span class="section__label">02 — Valor</span>
-          <h2 id="aportes-title">Qué puedo aportar</h2>
-        </div>
-        <div class="cards-grid" role="list" aria-label="Áreas de aporte">
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-            </div>
-            <h3>Coordinación administrativa</h3>
-            <p>Organización de procesos internos, control de tareas, seguimiento de pendientes y gestión del día a día institucional.</p>
+        <div class="value-grid">
+          <article class="value-card reveal">
+            <span class="value-card__number">01</span>
+            <h3>Seguimiento operativo</h3>
+            <p>Organización de pendientes, responsables, fechas, prioridades y avances para mantener claridad sobre lo que ocurre en la operación diaria.</p>
           </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <h3>Gestión operativa</h3>
-            <p>Supervisión de la operación, identificación de cuellos de botella y ejecución de acciones correctivas con rapidez.</p>
+          <article class="value-card reveal">
+            <span class="value-card__number">02</span>
+            <h3>Gestión documental</h3>
+            <p>Creación y organización de formatos, bitácoras, bases de datos, informes y soportes que permiten consultar información sin jugar a la arqueología digital.</p>
           </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>Atención y seguimiento a clientes</h3>
-            <p>Comunicación clara, manejo de expectativas, resolución de inquietudes y fidelización mediante acompañamiento cercano.</p>
-          </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-            </div>
-            <h3>Organización de información</h3>
-            <p>Estructuración de datos, bases de información, carpetas y sistemas de consulta accesibles para todo el equipo.</p>
-          </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            </div>
-            <h3>Documentación y reportes</h3>
-            <p>Elaboración de informes, registros y documentación útil que facilita la toma de decisiones y el control de procesos.</p>
-          </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-            </div>
-            <h3>Mejora de procesos internos</h3>
-            <p>Diagnóstico de flujos de trabajo, propuesta de mejoras prácticas e implementación de cambios con seguimiento real.</p>
-          </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
-            </div>
-            <h3>Herramientas digitales</h3>
-            <p>Manejo fluido de Google Workspace, Sheets, Drive, Apps Script y plataformas digitales para optimizar la gestión.</p>
-          </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3>Automatización básica</h3>
-            <p>Creación de scripts y flujos automáticos en Sheets/Apps Script para eliminar tareas repetitivas y reducir errores.</p>
-          </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
+          <article class="value-card reveal">
+            <span class="value-card__number">03</span>
             <h3>Comunicación clara</h3>
-            <p>Redacción de comunicados, instrucciones, reportes y mensajes que llegan bien, sin ambigüedades ni malentendidos.</p>
+            <p>Redacción de mensajes, instrucciones, reportes y comunicaciones internas o externas con un tono claro, oportuno y orientado a resolver.</p>
           </article>
-
-          <article class="skill-card reveal" role="listitem">
-            <div class="skill-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Liderazgo y trabajo en equipo</h3>
-            <p>Experiencia coordinando equipos mixtos, asignando responsabilidades y manteniendo el avance de proyectos reales.</p>
+          <article class="value-card reveal">
+            <span class="value-card__number">04</span>
+            <h3>Mejora de procesos</h3>
+            <p>Identificación de tareas repetitivas, reprocesos y puntos de desorden para plantear soluciones simples con herramientas digitales accesibles.</p>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ─── EXPERIENCIA ────────────────────────────────────────── -->
-    <section class="section" id="experiencia" aria-labelledby="exp-title">
+    <section class="section" id="experiencia" aria-labelledby="experiencia-title">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__label">03 — Trayectoria</span>
-          <h2 id="exp-title">Experiencia destacada</h2>
+          <p class="section__kicker">03 · Experiencia</p>
+          <h2 id="experiencia-title">Experiencia administrativa y operativa</h2>
         </div>
+
         <div class="timeline">
-
           <article class="timeline__item reveal">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__meta">
-                <span class="timeline__period">2018 – Actualidad</span>
-                <span class="timeline__company">Musicala SAS</span>
-              </div>
-              <h3 class="timeline__role">Director General, Cofundador y Coordinador Académico</h3>
-              <ul class="timeline__list" aria-label="Responsabilidades">
-                <li>Dirección administrativa y operativa de una escuela de artes con múltiples disciplinas y sedes.</li>
-                <li>Coordinación de equipos docentes y administrativos: asignación de cargas, seguimiento y comunicación interna.</li>
-                <li>Organización de horarios, procesos académicos, seguimiento de estudiantes y comunicación con familias.</li>
-                <li>Atención a clientes, seguimiento comercial, alianzas institucionales y soporte al equipo.</li>
-                <li>Creación de herramientas digitales propias para registro, control de asistencia, informes y gestión interna.</li>
-                <li>Planeación de proyectos, control documental y mejora continua de procesos operativos.</li>
+            <div class="timeline__date">2018 - actualidad</div>
+            <div class="timeline__body">
+              <p class="timeline__company">Musicala SAS</p>
+              <h3>Gestión administrativa, académica y operativa</h3>
+              <ul>
+                <li>Apoyo en la organización administrativa de una escuela de artes con procesos académicos, operativos y de atención a usuarios.</li>
+                <li>Seguimiento de horarios, registros, asistencia, novedades, documentos, tareas internas y comunicaciones institucionales.</li>
+                <li>Elaboración de reportes, actas, informes, bases de seguimiento y documentos de soporte para procesos internos y externos.</li>
+                <li>Coordinación de información entre equipos, docentes, familias, aliados y áreas administrativas.</li>
+                <li>Implementación de herramientas digitales internas para ordenar registros, consultas, formularios y flujos de trabajo.</li>
               </ul>
             </div>
           </article>
 
           <article class="timeline__item reveal">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__meta">
-                <span class="timeline__period">Experiencia previa</span>
-                <span class="timeline__company">Otras organizaciones</span>
-              </div>
-              <h3 class="timeline__role">Coordinación, Docencia y Gestión</h3>
-              <ul class="timeline__list">
-                <li><strong>Academia Vieira:</strong> Coordinación académica, docencia, seguimiento a estudiantes y apoyo curricular.</li>
-                <li><strong>Meraki Plus Music:</strong> Dirección de procesos formativos, organización interna y atención a estudiantes.</li>
-                <li><strong>Trabajo independiente:</strong> Gestión de proyectos, trabajo directo con clientes, presentaciones y planificación.</li>
+            <div class="timeline__date">Trayectoria complementaria</div>
+            <div class="timeline__body">
+              <p class="timeline__company">Educación, servicios y proyectos culturales</p>
+              <h3>Apoyo a procesos, usuarios y equipos</h3>
+              <ul>
+                <li>Acompañamiento en procesos formativos y organizativos con enfoque en cumplimiento, comunicación y servicio.</li>
+                <li>Creación de materiales, formatos y documentos para facilitar el trabajo de equipos y mejorar la trazabilidad.</li>
+                <li>Atención y seguimiento a usuarios, estudiantes, familias, clientes y aliados en contextos de servicio.</li>
               </ul>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ─── HABILIDADES ────────────────────────────────────────── -->
-    <section class="section section--alt" id="habilidades" aria-labelledby="skills-title">
+    <section class="section section--muted" id="competencias" aria-labelledby="competencias-title">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__label">04 — Competencias</span>
-          <h2 id="skills-title">Herramientas y habilidades</h2>
+          <p class="section__kicker">04 · Competencias</p>
+          <h2 id="competencias-title">Habilidades administrativas y herramientas de apoyo</h2>
         </div>
-        <div class="skills-blocks reveal">
 
-          <div class="skills-block">
-            <h3 class="skills-block__title">Administración y operaciones</h3>
-            <ul class="skills-block__list" role="list">
-              <li>Coordinación de procesos</li>
-              <li>Gestión documental</li>
-              <li>Reportes e informes</li>
-              <li>Atención al cliente</li>
-              <li>Seguimiento de tareas</li>
-              <li>Organización de agendas</li>
-              <li>Comunicación con equipos</li>
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <h3>Administración y operación</h3>
+            <ul role="list">
+              <li>Seguimiento de tareas y pendientes</li>
+              <li>Organización documental</li>
+              <li>Elaboración de informes y actas</li>
+              <li>Control de agendas y registros</li>
+              <li>Atención a usuarios y clientes</li>
+              <li>Apoyo a equipos de trabajo</li>
             </ul>
           </div>
 
-          <div class="skills-block">
-            <h3 class="skills-block__title">Herramientas digitales</h3>
-            <ul class="skills-block__list" role="list">
+          <div class="skill-group">
+            <h3>Herramientas digitales</h3>
+            <ul role="list">
               <li>Google Workspace</li>
               <li>Google Sheets</li>
               <li>Google Drive</li>
-              <li>Apps Script</li>
-              <li>Firebase (básico/intermedio)</li>
-              <li>HTML · CSS · JavaScript</li>
-              <li>Canva</li>
-              <li>IA para documentación y contenido</li>
+              <li>Formularios y bases de datos</li>
+              <li>Apps Script básico/intermedio</li>
+              <li>HTML, CSS y JavaScript básico/intermedio</li>
             </ul>
           </div>
 
-          <div class="skills-block">
-            <h3 class="skills-block__title">Educación y formación</h3>
-            <ul class="skills-block__list" role="list">
-              <li>Diseño de materiales</li>
-              <li>Capacitación de equipos</li>
-              <li>Acompañamiento pedagógico</li>
-              <li>Comunicación clara</li>
-              <li>Gestión de grupos</li>
+          <div class="skill-group">
+            <h3>Comunicación y criterio</h3>
+            <ul role="list">
+              <li>Redacción clara y profesional</li>
+              <li>Documentación de procesos</li>
+              <li>Organización de información</li>
+              <li>Priorización y seguimiento</li>
+              <li>Capacidad de aprendizaje</li>
+              <li>Español nativo · Inglés avanzado</li>
             </ul>
           </div>
-
-          <div class="skills-block">
-            <h3 class="skills-block__title">Idiomas</h3>
-            <ul class="skills-block__list" role="list">
-              <li>Español — Nativo</li>
-              <li>Inglés — Avanzado</li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ─── PROYECTOS DIGITALES ────────────────────────────────── -->
-    <section class="section" id="proyectos" aria-labelledby="projects-title">
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__label">05 — Iniciativas</span>
-          <h2 id="projects-title">Proyectos digitales</h2>
+          <p class="section__kicker">05 · Procesos aplicados</p>
+          <h2 id="proyectos-title">Ejemplos de organización y mejora interna</h2>
         </div>
-        <div class="projects-grid" role="list">
 
-          <article class="project-card reveal" role="listitem">
-            <div class="project-card__tag">Gestión interna</div>
-            <h3>Musicala Manager</h3>
-            <p>Herramienta web interna para centralizar accesos, recursos institucionales, enlaces y módulos de gestión del equipo.</p>
-            <a href="#" class="btn btn--ghost btn--sm" aria-label="Ver proyecto Musicala Manager (placeholder)">Ver proyecto →</a>
+        <div class="case-grid">
+          <article class="case-card reveal">
+            <p class="case-card__label">Gestión interna</p>
+            <h3>Centralización de recursos</h3>
+            <p>Organización de accesos, documentos, módulos internos y herramientas de consulta para facilitar el trabajo administrativo y operativo.</p>
+            <span>Resultado: menos dispersión de información.</span>
           </article>
-
-          <article class="project-card reveal" role="listitem">
-            <div class="project-card__tag">Operaciones</div>
-            <h3>Sistemas de registro y seguimiento</h3>
-            <p>Aplicaciones para control de asistencia, bitácoras docentes, informes automáticos y seguimiento de procesos académicos.</p>
-            <a href="#" class="btn btn--ghost btn--sm" aria-label="Ver proyecto de sistemas de registro (placeholder)">Ver proyecto →</a>
+          <article class="case-card reveal">
+            <p class="case-card__label">Seguimiento</p>
+            <h3>Registros de operación</h3>
+            <p>Estructuración de registros para clases, asistencia, novedades, tareas, horarios y otros datos relevantes de la operación diaria.</p>
+            <span>Resultado: mejor trazabilidad.</span>
           </article>
-
-          <article class="project-card reveal" role="listitem">
-            <div class="project-card__tag">Educación</div>
-            <h3>Recursos interactivos educativos</h3>
-            <p>Páginas y herramientas digitales para apoyar procesos de aprendizaje, desarrolladas desde cero para el equipo docente.</p>
-            <a href="#" class="btn btn--ghost btn--sm" aria-label="Ver proyectos educativos interactivos (placeholder)">Ver proyecto →</a>
+          <article class="case-card reveal">
+            <p class="case-card__label">Documentación</p>
+            <h3>Informes y soportes</h3>
+            <p>Preparación de documentos, bases de información y reportes para seguimiento institucional, análisis interno y comunicación con aliados.</p>
+            <span>Resultado: decisiones con mejor información.</span>
           </article>
-
-          <article class="project-card reveal" role="listitem">
-            <div class="project-card__tag">Automatización</div>
-            <h3>Automatización con Sheets y Apps Script</h3>
-            <p>Scripts y flujos automatizados para registros, reportes, cálculos recurrentes y consulta ágil de información institucional.</p>
-            <a href="#" class="btn btn--ghost btn--sm" aria-label="Ver proyectos de automatización (placeholder)">Ver proyecto →</a>
-          </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ─── CONTACTO ───────────────────────────────────────────── -->
-    <section class="section section--contact" id="contacto" aria-labelledby="contact-title">
-      <div class="container">
-        <div class="section__header reveal">
-          <span class="section__label">06 — Contacto</span>
-          <h2 id="contact-title">Hablemos</h2>
+    <section class="section contact-section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contact-panel reveal">
+        <div>
+          <p class="section__kicker">06 · Contacto</p>
+          <h2 id="contacto-title">Contacto profesional</h2>
+          <p>Este perfil funciona como complemento a procesos de selección, propuestas o conversaciones profesionales relacionadas con gestión administrativa, operación y seguimiento de procesos.</p>
         </div>
-        <p class="contact__tagline reveal">Disponible para oportunidades remotas en gestión administrativa,<br class="contact__br"> operaciones, coordinación y soporte de procesos.</p>
-
-        <div class="contact__cards reveal">
-
-          <a href="mailto:alekcaballeromusic@gmail.com" class="contact-card" aria-label="Enviar correo a alekcaballeromusic@gmail.com">
-            <div class="contact-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-            </div>
-            <div>
-              <p class="contact-card__label">Correo electrónico</p>
-              <p class="contact-card__value">alekcaballeromusic@gmail.com</p>
-            </div>
-          </a>
-
-          <a href="https://wa.me/573195477475?text=Hola%20Alek%2C%20vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20contactarte" target="_blank" rel="noopener" class="contact-card" aria-label="Contactar por WhatsApp al +57 319 547 7475">
-            <div class="contact-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <div>
-              <p class="contact-card__label">WhatsApp</p>
-              <p class="contact-card__value">+57 319 547 7475</p>
-            </div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/alekcaballero1992" target="_blank" rel="noopener" class="contact-card" aria-label="Ver perfil de LinkedIn de Alek Caballero">
-            <div class="contact-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </div>
-            <div>
-              <p class="contact-card__label">LinkedIn</p>
-              <p class="contact-card__value">www.linkedin.com/in/alekcaballero1992</p>
-            </div>
-          </a>
-
-          <a href="Alek_Caballero_CV.pdf" download class="contact-card" aria-label="Descargar CV de Alek Caballero en PDF">
-            <div class="contact-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </div>
-            <div>
-              <p class="contact-card__label">Currículum</p>
-              <p class="contact-card__value">Descargar CV en PDF</p>
-            </div>
-          </a>
-
+        <div class="contact-actions">
+          <a class="btn btn--primary" href="mailto:alekcaballeromusic@gmail.com">alekcaballeromusic@gmail.com</a>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- ─── FOOTER ─────────────────────────────────────────────── -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p>© <span id="footer-year"></span> Jimmy Alexander Caballero Moreno · Alek Caballero</p>
-      <p class="footer__sub">Bogotá, Colombia</p>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Jimmy Alexander Caballero Moreno</p>
+      <a href="#top">Volver arriba</a>
     </div>
   </footer>
 
